@@ -39,6 +39,10 @@ public class Sample17 {
                                     .collect(toCollection(TreeSet::new));
         System.out.println(ani3.toString());
         
+        // 더 간단한 생성자 사용도 가능
+        Set<String> treeSet = new TreeSet<>(ani1);
+        System.out.println(treeSet.toString());
+
         // List -> Map
         System.out.println("\n** HashMap으로 변환 후 출력");
         Map<String, Integer>  ani4 = 
