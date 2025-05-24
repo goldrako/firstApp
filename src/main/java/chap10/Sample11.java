@@ -6,7 +6,7 @@ import lombok.Getter;
 public class Sample11 {
     public static void main(String[] args) {
         Student1<Integer, Integer> younghee = new Student1<>(1, 4);
-        //Student1<Double, Double> younghee = new Student1<>(160.1 , 55.5); // 타입 제한으로 오류발생
+        //Student1<Double, Double> younghee = new Student1<>(160.1 , 55.5); // 타입 제한으로 오류발생, extends Integer로 선언되어서.
         younghee.printInfo("영희");
     }
 }
